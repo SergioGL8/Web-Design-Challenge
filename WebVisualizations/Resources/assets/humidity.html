@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--We need this loaded before getting into the code -->
+    <meta charset="UTF-8">
+
+    <!-- Title is here -->
+    <title>Humidity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap stylesheet CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <!-- Black horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <!-- Home button -->
+            <!-- Button which links to index -->
+            <a class="navbar-brand text-white" href="..\index.html"> Web-Design Challenge </a>
+
+            <!-- Adding a button for small screen sizes-->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Right side of navbar -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="temperature.html">Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind_speed.html">Wind Speed </a>
+                        </div>
+                    </li> 
+
+                    <!-- Nav Items -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Body -->
+    <!-- background color -->
+    <div style="background-color:rgb(175, 129, 12);">
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- line break to push header down -->
+                <br>  
+            </div>
+        </div>
+    </div> 
+
+    <div class="container content">
+        
+        <!-- Horizontal line to divide the header and the information part -->
+        <hr>
+
+        <!-- Add a row with a header size 8/12 col -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="col-md-12">
+                    <h3>Latitude vs Humidity</h3>
+                    <hr> 
+                        <img class="rounded mx-auto d-block float-left" src="..\Images\Latitude vs Humidity (%).png" width="50%" alt="Latitude vs Humidity (%)">
+                    <br>
+                    
+                <!-- Summary paragraph justify with the size 12/12 -->
+                    <p class="text-justify">
+                        We can see that there is <strong> no correlation</strong> between Latitude and Humidity (%).
+                    </p>
+                    <br> 
+                </div>   
+            </div>
+
+            <!-- Visualizations using the last 4 columns and adding the pre-views of the weather models -->
+            <!-- Header --> 
+            <div class="col-md-4" >
+                <div class="col-md-12">
+                    <h3>Graphic Visualizations</h3>
+
+                    <!-- Full wide on small screen sizes--> 
+                    <div class="row">
+                        <div class="col-3 col-md-6">
+                            <a href="temperature.html"><img src="..\Images\Latitude vs Max Temp (F).png" alt = "Max. Temperature vs. Latitude" width="100%">
+                            </a>
+                        </div>
+
+                        <div class="col-3 col-md-6">
+                            <a href="humidity.html"><img src="..\Images\Latitude vs Humidity (%).png" alt = "Humidity vs. Latitude" width="100%" style="border:5px solid darkgray">
+                            </a>
+                        </div>
+
+                        <div class="col-3 col-md-6">
+                            <a href="cloudiness.html"><img src="..\Images\Latitude vs Cloudiness (%).png" alt = "Cloudiness vs. Latitude" width="100%">
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="wind_speed.html"><img src="..\Images\Latitude vs Wind Speed (mph).png" alt = "Windspeed vs. Latitude" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <hr>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+<!-- Add footer with my personal information -->
+<footer class="page-footer font-tiny footer-dark font-weight-light">
+    <div class="footer-copyright text-center py-3">
+        Author: Sergio Guarneros Luna &nbsp;&nbsp; | &nbsp;&nbsp; Contact: sergioguarneros95@gmail.com &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a target="_blank" href="https://github.com/SergioGL8"> GitHub: SergioGL8</a> &nbsp;&nbsp;     
+</footer>
+
+</html>
