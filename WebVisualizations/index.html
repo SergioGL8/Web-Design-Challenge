@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap stylesheet CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -26,7 +26,7 @@
             <a class="navbar-brand text-white" href="index.html"> Web-Design Challenge </a>
 
             <!-- Adding a button for small screen sizes-->
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"> </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,20 +36,20 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="assets\temperature.html">Temperature</a>
-                            <a class="dropdown-item" href="assets\humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="assets\cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="assets\wind_speed.html">Wind Speed </a>
+                            <a class="dropdown-item" href="temperature.html">Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind_speed.html">Wind Speed </a>
                         </div>
                     </li> 
 
                     <!-- Nav Items -->
                     <li class="nav-item">
-                        <a class="nav-link" href="assets\comparison.html">Comparison</a>
+                        <a class="nav-link" href="comparison.html">Comparison</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="assets\data.html">Data</a>
+                        <a class="nav-link" href="data.html">Data</a>
                     </li>
                 </ul>
             </div>
@@ -94,18 +94,18 @@
                     <br>
         
                 <!-- Summary paragraph justify with the size 12/12 -->
-                <p class="text-justify">
+                    <p class="text-justify">
                         In this project, I have analyzed weather patterns based on 
                         distance to the equator. I utilized Python script for visualizing the weather of 500+ cities 
                         across the world. To accomplish this, I utilized Python library and OpenWeatherMap API to create representative
                         models of weather in different cities.
-                </p>
-                <br>
-                <p class="text-justify">
+                    </p>
+                    <br>
+                    <p class="text-justify">
                     Using Pandas I organized the data and analized the information then with MatPlotLib, I used each city's maximum temperature, 
                     humidity, cloudiness, or wind speed and plotted the data with the latitude on the appropriate graphs.
-                </p>
-                <br> 
+                    </p>
+                    <br> 
                 </div>   
             </div>
 
@@ -118,21 +118,21 @@
                     <!-- Full wide on small screen sizes--> 
                     <div class="row">
                         <div class="col-3 col-md-6">
-                            <a href="assets\temperature.html"><img src="Images\Latitude vs Max Temp (F).png" alt = "Maximum Temperature vs. Latitude" width="100%">
+                            <a href="temperature.html"><img src="Images\Latitude vs Max Temp (F).png" alt = "Maximum Temperature vs. Latitude" width="100%">
                         </a>
                         </div>
 
                         <div class="col-3 col-md-6">
-                            <a href="assets\humidity.html"><img src="Images\Latitude vs Humidity (%).png" alt = "Humidity vs. Latitude" width="100%">
+                            <a href="humidity.html"><img src="Images\Latitude vs Humidity (%).png" alt = "Humidity vs. Latitude" width="100%">
                             </a>
                         </div>
 
                         <div class="col-3 col-md-6">
-                            <a href="assets\cloudiness.html"><img src="Images\Latitude vs Cloudiness (%).png" alt = "Cloudiness vs. Latitude" width="100%">
+                            <a href="cloudiness.html"><img src="Images\Latitude vs Cloudiness (%).png" alt = "Cloudiness vs. Latitude" width="100%">
                             </a>
                         </div>
                         <div class="col-3 col-md-6">
-                            <a href="assets\wind_speed.html"><img src="Images\Latitude vs Wind Speed (mph).png" alt = "Windspeed vs. Latitude" width="100%">
+                            <a href="wind_speed.html"><img src="Images\Latitude vs Wind Speed (mph).png" alt = "Windspeed vs. Latitude" width="100%">
                             </a>
                         </div>
                     </div>
@@ -142,10 +142,10 @@
         <hr>
     </div>
 
-         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     
 </body>
 
